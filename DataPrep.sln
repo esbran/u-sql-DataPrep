@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{182E2583-ECAD-465B-BB50-91101D7C24CE}") = "DataPrep", "DataPrep\DataPrep.usqlproj", "{01BE6F62-C8AB-4427-B646-80EC40916309}"
+EndProject
+Project("{3466B219-07DB-46AE-8697-CFD2A1650EC8}") = "endtoend", "endtoend\endtoend.dfproj", "{CA4EED70-02BD-40C9-B7E5-EAF15A5C6F52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01BE6F62-C8AB-4427-B646-80EC40916309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01BE6F62-C8AB-4427-B646-80EC40916309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01BE6F62-C8AB-4427-B646-80EC40916309}.Debug|x64.ActiveCfg = Debug|x64
+		{01BE6F62-C8AB-4427-B646-80EC40916309}.Debug|x64.Build.0 = Debug|x64
+		{01BE6F62-C8AB-4427-B646-80EC40916309}.Debug|x86.ActiveCfg = Debug|x86
+		{01BE6F62-C8AB-4427-B646-80EC40916309}.Debug|x86.Build.0 = Debug|x86
+		{01BE6F62-C8AB-4427-B646-80EC40916309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01BE6F62-C8AB-4427-B646-80EC40916309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01BE6F62-C8AB-4427-B646-80EC40916309}.Release|x64.ActiveCfg = Release|x64
+		{01BE6F62-C8AB-4427-B646-80EC40916309}.Release|x64.Build.0 = Release|x64
+		{01BE6F62-C8AB-4427-B646-80EC40916309}.Release|x86.ActiveCfg = Release|x86
+		{01BE6F62-C8AB-4427-B646-80EC40916309}.Release|x86.Build.0 = Release|x86
+		{CA4EED70-02BD-40C9-B7E5-EAF15A5C6F52}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{CA4EED70-02BD-40C9-B7E5-EAF15A5C6F52}.Debug|x64.ActiveCfg = Debug|x86
+		{CA4EED70-02BD-40C9-B7E5-EAF15A5C6F52}.Debug|x86.ActiveCfg = Debug|x86
+		{CA4EED70-02BD-40C9-B7E5-EAF15A5C6F52}.Debug|x86.Build.0 = Debug|x86
+		{CA4EED70-02BD-40C9-B7E5-EAF15A5C6F52}.Release|Any CPU.ActiveCfg = Release|x86
+		{CA4EED70-02BD-40C9-B7E5-EAF15A5C6F52}.Release|x64.ActiveCfg = Release|x86
+		{CA4EED70-02BD-40C9-B7E5-EAF15A5C6F52}.Release|x86.ActiveCfg = Release|x86
+		{CA4EED70-02BD-40C9-B7E5-EAF15A5C6F52}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

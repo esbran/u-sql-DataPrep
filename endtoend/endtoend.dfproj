@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ca4eed70-02bd-40c9-b7e5-eaf15a5c6f52</ProjectGuid>
+    <OutputType>File</OutputType>
+    <AssemblyName>DataFactory</AssemblyName>
+    <ApiVersion>2015-09-01</ApiVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Name>endtoend</Name>
+    <RootNamespace>endtoend</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ADFConfigFileToPublish>
+    </ADFConfigFileToPublish>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Dependencies\" />
+    <Folder Include="Dependencies\scripts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Script Include="CopyPipeline-onprem.json" />
+    <Script Include="espenSA.json" />
+    <Script Include="espen_adla.json" />
+    <Script Include="espen_adls.json" />
+    <Script Include="InputDataset-3jv.json" />
+    <Script Include="OutputDataset-3jv.json" />
+    <Script Include="OutputDataset-rzk.json" />
+    <Script Include="Source-File-OnPrem.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dependencies\Schema.txt">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(AppData)\Microsoft\DataFactory Tools for Visual Studio\MsBuild\1.0\DataFactory.targets" />
+</Project>

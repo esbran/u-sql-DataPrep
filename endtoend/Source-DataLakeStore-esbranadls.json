@@ -1,0 +1,17 @@
+{
+  "name": "Source-DataLakeStore-esbranadls",
+  "properties": {
+    "type": "AzureDataLakeStore",
+    "typeProperties": {
+      "dataLakeStoreUri": "https://esbranadls.azuredatalakestore.net/webhdfs/v1",
+      "servicePrincipalId": "",
+      "servicePrincipalKey": "**********",
+      "tenant": "",
+      "authorization": "**********",
+      "sessionId": "**********",
+      "subscriptionId": "c5dd636a-4cbb-45c7-b85a-d2491e1963dd",
+      "resourceGroupName": "esbranResources"
+    }
+  },
+  "$schema": "http://datafactories.schema.management.azure.com/internalschemas/2015-09-01/Microsoft.DataFactory.linkedservice.json"
+}

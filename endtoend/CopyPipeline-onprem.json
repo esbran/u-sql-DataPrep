@@ -1,0 +1,86 @@
+{
+  "name": "CopyPipeline-onprem",
+  "properties": {
+    "activities": [
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "FileSystemSource",
+            "recursive": true
+          },
+          "sink": {
+            "type": "AzureDataLakeStoreSink",
+            "copyBehavior": "PreserveHierarchy",
+            "writeBatchSize": 0,
+            "writeBatchTimeout": "00:00:00"
+          }
+        },
+        "inputs": [
+          {
+            "name": "InputDataset-3jv"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "OutputDataset-3jv"
+          }
+        ],
+        "policy": {
+          "timeout": "1.00:00:00",
+          "concurrency": 1,
+          "executionPriorityOrder": "NewestFirst",
+          "style": "StartOfInterval",
+          "retry": 3,
+          "longRetry": 0,
+          "longRetryInterval": "00:00:00"
+        },
+        "scheduler": {
+          "frequency": "Month",
+          "interval": 1
+        },
+        "name": "Activity-0-File path_ data_->OutputDataset-3jv"
+      },
+      {
+        "type": "DataLakeAnalyticsU-SQL",
+        "typeProperties": {
+          "scriptPath": "scripts\\Schema.txt",
+          "scriptLinkedService": "espenSA",
+          "degreeOfParallelism": 5,
+          "priority": 100,
+          "parameters": {
+            "in": "adl://espenadls.azuredatalakestore.net/Level_1_Raw/trip_data/trip_data_1.csv",
+            "out": "adl://espenadls.azuredatalakestore.net/Level_2_Schema/demo_trip_adf.csv"
+          }
+        },
+        "inputs": [
+          {
+            "name": "OutputDataset-3jv"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "OutputDataset-rzk"
+          }
+        ],
+        "policy": {
+          "timeout": "06:00:00",
+          "concurrency": 1,
+          "executionPriorityOrder": "NewestFirst",
+          "retry": 1
+        },
+        "scheduler": {
+          "frequency": "Month",
+          "interval": 1
+        },
+        "name": "EventsByRegion",
+        "linkedServiceName": "espen_adla"
+      }
+    ],
+    "start": "2017-02-25T09:16:37.639Z",
+    "end": "2099-12-31T00:00:00Z",
+    "isPaused": false,
+    "pipelineMode": "Scheduled"
+  },
+  "$schema": "http://datafactories.schema.management.azure.com/internalschemas/2015-09-01/Microsoft.DataFactory.pipeline.json"
+}

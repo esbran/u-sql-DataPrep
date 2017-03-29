@@ -1,0 +1,84 @@
+{
+  "name": "InputDataset-rzk",
+  "properties": {
+    "structure": [
+      {
+        "name": "medallion",
+        "type": "String"
+      },
+      {
+        "name": "hack_license",
+        "type": "String"
+      },
+      {
+        "name": "vendor_id",
+        "type": "String"
+      },
+      {
+        "name": "rate_code",
+        "type": "Int64"
+      },
+      {
+        "name": "store_and_fwd_flag",
+        "type": "String"
+      },
+      {
+        "name": "pickup_datetime",
+        "type": "Datetime"
+      },
+      {
+        "name": "dropoff_datetime",
+        "type": "Datetime"
+      },
+      {
+        "name": "passenger_count",
+        "type": "Int64"
+      },
+      {
+        "name": "trip_time_in_secs",
+        "type": "Int64"
+      },
+      {
+        "name": "trip_distance",
+        "type": "Double"
+      },
+      {
+        "name": "pickup_longitude",
+        "type": "Double"
+      },
+      {
+        "name": "pickup_latitude",
+        "type": "Double"
+      },
+      {
+        "name": "dropoff_longitude",
+        "type": "Double"
+      },
+      {
+        "name": "dropoff_latitude",
+        "type": "Double"
+      }
+    ],
+    "published": false,
+    "type": "AzureDataLakeStore",
+    "linkedServiceName": "Source-DataLakeStore-esbranadls",
+    "typeProperties": {
+      "folderPath": "Taxi/",
+      "format": {
+        "type": "TextFormat",
+        "columnDelimiter": ",",
+        "firstRowAsHeader": true
+      },
+      "compression": {
+        "type": "ZipDeflate"
+      }
+    },
+    "availability": {
+      "frequency": "Month",
+      "interval": 1
+    },
+    "external": true,
+    "policy": {}
+  },
+  "$schema": "http://datafactories.schema.management.azure.com/internalschemas/2015-09-01/Microsoft.DataFactory.table.json"
+}

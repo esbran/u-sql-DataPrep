@@ -1,0 +1,14 @@
+{
+  "name": "Source-File-OnPrem",
+  "properties": {
+    "type": "OnPremisesFileServer",
+    "typeProperties": {
+      "host": "C:\\Users\\espen\\Downloads",
+      "gatewayName": "Gateway-espendata",
+      "userId": "",
+      "password": "**********",
+      "encryptedCredential": "eyJDbGFzc1R5cGUiOiJNaWNyb3NvZnQuRGF0YVByb3h5LkNvcmUuSW50ZXJTZXJ2aWNlRGF0YUNvbnRyYWN0LkNyZWRlbnRpYWxTVTA2Q1kxNCIsIkNyZWRlbnRpYWxJZCI6IjFiMDQ2ZTBhLTVlOTAtNDVlZS05YTAwLTY1YTY1YmFhMDRlYiIsIkRhdGFTb3VyY2VSZWZlcmVuY2VBbmRTaWduYXR1cmUiOm51bGwsIkRhdGFTb3VyY2VTZXR0aW5ncyI6bnVsbCwiRW5jcnlwdGVkQmxvYiI6bnVsbCwiVmVyc2lvbiI6IjEuMCJ9"
+    }
+  },
+  "$schema": "http://datafactories.schema.management.azure.com/internalschemas/2015-09-01/Microsoft.DataFactory.linkedservice.json"
+}

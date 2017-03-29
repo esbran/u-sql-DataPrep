@@ -1,0 +1,11 @@
+﻿{
+    "$schema": "http://datafactories.schema.management.azure.com/schemas/2015-09-01/Microsoft.DataFactory.LinkedService.json",
+    "name": "espenSA",
+    "properties": {
+        "type": "AzureStorage",
+      "typeProperties": {
+        "connectionString": "DefaultEndpointsProtocol=https;AccountName=espensa;AccountKey=Ze7IrhMAFGvL5tQkqoOBOZwiHwIAvQyY7woKf1okWmEHFiUAlUNm9GIm7HRR3RC4GLgqB7i2d7nSnAfl0Z7OpA==;EndpointSuffix=core.windows.net"
+      }
+        
+    }
+}

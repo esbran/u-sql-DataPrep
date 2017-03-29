@@ -1,0 +1,17 @@
+{
+  "$schema": "http://datafactories.schema.management.azure.com/internalschemas/2015-09-01/Microsoft.DataFactory.linkedservice.json",
+  "name": "espenADLS",
+  "properties": {
+    "type": "AzureDataLakeStore",
+    "typeProperties": {
+      "dataLakeStoreUri": "https://espenadls.azuredatalakestore.net/webhdfs/v1",
+      "servicePrincipalId": "",
+      "servicePrincipalKey": "**********",
+      "tenant": "",
+      "authorization": "**********",
+      "sessionId": "**********",
+      "subscriptionId": "73625eb6-4da7-48b8-b240-c111747bf159",
+      "resourceGroupName": "demo"
+    }
+  }
+}

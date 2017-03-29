@@ -1,0 +1,18 @@
+{
+  "name": "OutputDataset-3jv",
+  "properties": {
+    "published": false,
+    "type": "AzureDataLakeStore",
+    "linkedServiceName": "espen_adls",
+    "typeProperties": {
+      "folderPath": "Raw"
+    },
+    "availability": {
+      "frequency": "Month",
+      "interval": 1
+    },
+    "external": false,
+    "policy": {}
+  },
+  "$schema": "http://datafactories.schema.management.azure.com/internalschemas/2015-09-01/Microsoft.DataFactory.table.json"
+}

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>01be6f62-c8ab-4427-b646-80ec40916309</ProjectGuid>
+    <OutputType>File</OutputType>
+    <AssemblyName>Algebra.xml</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <Name>DataPrep</Name>
+    <RootNamespace>DataPrep</RootNamespace>
+    <RuntimeVersion>default</RuntimeVersion>
+    <OutputStreamPath>C:\Users\esbran\AppData\Local\USQLDataRoot</OutputStreamPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Script Include="Prep.usql" />
+    <Script Include="Sample.usql" />
+    <Script Include="Schema.usql" />
+    <Script Include="Schema_ADF.usql" />
+    <Script Include="Script.usql" />
+    <ScriptCode Include="Prep.usql.cs">
+      <DependentUpon>Prep.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="Sample.usql.cs">
+      <DependentUpon>Sample.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="Schema.usql.cs">
+      <DependentUpon>Schema.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="Schema_ADF.usql.cs">
+      <DependentUpon>Schema_ADF.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="Script.usql.cs">
+      <DependentUpon>Script.usql</DependentUpon>
+    </ScriptCode>
+  </ItemGroup>
+  <Import Project="$(AppData)\Microsoft\DataLake\MsBuild\1.0\Usql.targets" />
+</Project>

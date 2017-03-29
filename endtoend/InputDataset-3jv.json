@@ -1,0 +1,18 @@
+{
+  "name": "InputDataset-3jv",
+  "properties": {
+    "published": false,
+    "type": "FileShare",
+    "linkedServiceName": "Source-File-OnPrem",
+    "typeProperties": {
+      "folderPath": "data/"
+    },
+    "availability": {
+      "frequency": "Month",
+      "interval": 1
+    },
+    "external": true,
+    "policy": {}
+  },
+  "$schema": "http://datafactories.schema.management.azure.com/internalschemas/2015-09-01/Microsoft.DataFactory.table.json"
+}

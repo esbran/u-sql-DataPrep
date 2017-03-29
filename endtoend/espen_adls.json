@@ -1,0 +1,15 @@
+﻿{
+    "$schema": "http://datafactories.schema.management.azure.com/schemas/2015-09-01/Microsoft.DataFactory.LinkedService.json",
+    "name": "espen_adls",
+    "properties": {
+        "type": "AzureDataLakeStore",
+        "typeProperties": {
+            "authorization": "urn:ietf:wg:oauth:2.0:oob?code=AQABAAIAAADRNYRQ3dhRSrm-4K-adpCJwZojsrR9wSmmLf0dcwpyRtuIjsbcpSsKaXEwxelbAueNrtE2ElOre9HZR9YJQhkVoptewSZpyS_ElGf35aMNxYamsETeXng0oDDJTZwwkJPdhw1Ra3HCS-iQ1QL0YMoyqbewCsCNLQe9Rggz_Jg5ieQ_5ltDHMWzAIacCBetk-Wc_frShY1rnbbPwZL7AY7j5YwAsuW6837ImZEStKLjgij0sStrANHISKopoB9DJZm02w3rUo0StK_KzsxkfkBYWksVY_36kjy5xCXd4T4ZMYkXphcorsCz4n9GMbUf2PaDHfQwtX3hynhbVX959SF-ofkhC0LlQqOtN4YpN1_tlvKozpIfWRippv8DPh6x-BkHLvPhriJl2zNkw-PeG4gtQYBlRufu9dg8eXUIFfjZIV-Xovl_-WWPTz1mga-XIGifLzuTtWqEC2PnkAYesxSBcL-eU5UioaZSJXpMYH2PvYnHBIlZzJIe64VfRk1aHqI09auwX3_zAzHHAH4ikMbyVqCP2aSla5JrETdkm7dgsNiyBS-tq01s99w6nhmtbfvoDI1urMrxVGDoFCNP_bu-h8oEIZpK7ZEDxKXIEtr6ju9wRl3JHLJAWAekeEVb_P5OpgcZhSVIexUJq8p9v3p3B3EnOqI-AyCiCErsyONCu4cBYnBgvmSnvmIMCgBQYjQeJtumsw7o19vzhlH0T_3BBlcddwwTOQycjw4wXLzRPrt_28gmRPV1elOpaASM9APY1JaUxLOdof37fh2uSa3ZP-lheJnFt_Dgix1T6OFT9764AS4ckgdS0qmhhqnAvOG5kX9XFJ1gXVCIFOKdi-WlRx6KBfuM42HaUaffwKl0iyAA&state=208486a8-9177-48df-a391-1f9dd4b690bd&session_state=912f2576-27c3-4448-8777-f738efbcf084",
+            "sessionId": "eyJJZCI6bnVsbCwiQnJvd3Nlck5hdmlnYXRpb25JbmZvIjp7IkNhbGxiYWNrVXJpIjoidXJuOmlldGY6d2c6b2F1dGg6Mi4wOm9vYiIsIkxvZ29uVXJpIjoiaHR0cHM6Ly9sb2dpbi53aW5kb3dzLm5ldC83MmY5ODhiZi04NmYxLTQxYWYtOTFhYi0yZDdjZDAxMWRiNDcvb2F1dGgyL2F1dGhvcml6ZT9yZXNwb25zZV90eXBlPWNvZGUmY2xpZW50X2lkPWEzMDZiYWYwLTVhZDgtNGY2Zi1iYWJmLTZhMjg2YjAxNDJiYSZyZWRpcmVjdF91cmk9dXJuJTNBaWV0ZiUzQXdnJTNBb2F1dGglM0EyLjAlM0Fvb2ImcmVzb3VyY2U9aHR0cHMlM0ElMkYlMkZtYW5hZ2VtZW50LmNvcmUud2luZG93cy5uZXQlMkYmc3RhdGU9MjA4NDg2YTgtOTE3Ny00OGRmLWEzOTEtMWY5ZGQ0YjY5MGJkJm51eD0xJnByb21wdD1sb2dpbiIsIlNlcmlhbGl6ZWRDb250ZXh0IjpudWxsLCJXaW5kb3dzSGVpZ2h0IjowLCJXaW5kb3dzV2lkdGgiOjAsIlN0YXRlIjpudWxsfSwiRGF0YVNvdXJjZVJlZmVyZW5jZSI6IntcclxuXHRcdFx0XCJwcm90b2NvbFwiOiBcIkNhYm9cIixcclxuXHRcdFx0XCJhZGRyZXNzXCI6XHJcblx0XHRcdHtcclxuXHRcdFx0XHRcInRlbmFudElkXCI6IFwiNzJmOTg4YmYtODZmMS00MWFmLTkxYWItMmQ3Y2QwMTFkYjQ3XCJcclxuXHRcdFx0fVxyXG5cdCAgICB9IiwiT0F1dGhTZXR0aW5nc0lkIjoiMDEzNEEyQTYtOUZFQy00NTE0LTgxNzUtRUQyMjY4OTZCQ0I5XzU0MmIxNjgwLTUxZmMtNGVjMy1iYzJjLWU0OGVlODc3Zjc5MyIsIlN0YXRlIjoiMjA4NDg2YTgtOTE3Ny00OGRmLWEzOTEtMWY5ZGQ0YjY5MGJkIn0=",
+            "dataLakeStoreUri": "https://espenadls.azuredatalakestore.net/webhdfs/v1",
+            "accountName": "espenadls",
+            "subscriptionId": "73625eb6-4da7-48b8-b240-c111747bf159",
+            "resourceGroupName": "demo"
+        }
+    }
+}
